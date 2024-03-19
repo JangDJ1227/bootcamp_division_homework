@@ -6,7 +6,18 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
-
+    int time;
+    
+    while(scanf("%d",&time)==1){
+        if((0<=time)&&(time<=23)){
+            if(time<12)
+                printf("AM\n");
+            else
+                printf("PM\n");
+            break;
+        }
+        else
+            printf("error: rewrite\n");
+    }
     return 0;
 }

@@ -6,7 +6,21 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num;
+    
+    scanf("%d", &num);
+
+    while(1){
+        if(num>0){
+            printf("%d",num%10);
+            num/=10;
+        }
+        else{
+            printf("\n");
+            break;
+        }
+        
+    }
 
     return 0;
 }

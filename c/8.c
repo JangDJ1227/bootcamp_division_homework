@@ -6,7 +6,26 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num,factorial=1,sum=0;
+    while(scanf("%d",&num)){
+        if(num<=12)
+            break;
+        else{
+            printf("error: rewrite number:");
+            continue;
+        }
+    }
+    while(1){
+        if(num>=1){
+            factorial*=num;
+            sum+=num;
+            num-=1;
+        }
+        else{
+            printf("%d\n%d\n",sum,factorial);
+            break;
+        }
+    }
 
     return 0;
 }

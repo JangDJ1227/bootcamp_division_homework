@@ -6,7 +6,27 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num,sum=0;
+    while(scanf("%d",&num)==1){
+        if(num>0){
+            break;
+        }
+        else{
+            printf("X\n");
+            continue;
+        }
+    }
+
+    for(int i=0;;){
+        if(num>0){
+            sum+=num;
+            num-=1;
+        }
+        else{
+            printf("%d\n",sum);
+            break;
+        }
+    }
 
     return 0;
 }

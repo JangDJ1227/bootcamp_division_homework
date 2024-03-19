@@ -6,7 +6,21 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
-
+    char alpha;
+    scanf("%c",&alpha);
+    switch ((int)alpha)
+    {
+        case 97:
+        case 101:
+        case 105:
+        case 111:
+        case 117:
+            printf("O\n");
+            break;
+    
+        default:
+            printf("X\n");
+            break;
+    }
     return 0;
 }
